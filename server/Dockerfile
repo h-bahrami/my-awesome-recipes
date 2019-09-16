@@ -1,6 +1,6 @@
 FROM node:9.11.2-alpine
 
-WORKDIR /usr/app
+WORKDIR /usr/backend
 
 COPY package*.json ./
 RUN npm install -gy

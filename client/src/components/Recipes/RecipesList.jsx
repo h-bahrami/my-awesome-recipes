@@ -38,7 +38,7 @@ export default class RecipesList extends React.Component {
             <Divider type="vertical" />
 
             <Popconfirm placement="topLeft" title='Really ?' onConfirm={() => deleteRecipe(record.id)} okText="Yes" cancelText="No">
-              <Button type="danger" shape='round' icon='delete'></Button>
+              <Button type="danger"  shape='round' icon='delete'></Button>
             </Popconfirm>
           </span>
         ),
@@ -61,8 +61,9 @@ export default class RecipesList extends React.Component {
     return (
       <>
         {/* <Spin spinning={loading} size="large" /> */}
-        <Icon type="plus" onClick={(e) => newRecipe()} />
-        <Table columns={this.getColumns()} dataSource={items} loading={loading} />
+        
+        <Table columns={this.getColumns()} dataSource={items} loading={loading}/>
+        <Button icon="plus" shape="round" type="primary" size="large" onClick={(e) => newRecipe()} >New Recipe!</Button>
 
         <Drawer
           title={!selectedRecipe || selectedRecipe.id === '' ? 'Create new Recipe' : `Modifying ${selectedRecipe.name}` } 

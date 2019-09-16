@@ -1,0 +1,1003 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`First React component test with Enzyme Snapshot test 1`] = `
+Array [
+  <div
+    className="ant-spin"
+  >
+    <span
+      className="ant-spin-dot ant-spin-dot-spin"
+    >
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+    </span>
+  </div>,
+  <form
+    className="ant-form ant-form-horizontal login-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <span
+              className="ant-input-affix-wrapper"
+            >
+              <span
+                className="ant-input-prefix"
+              >
+                <i
+                  aria-label="icon: fire"
+                  className="anticon anticon-fire"
+                  style={
+                    Object {
+                      "color": "rgba(0,0,0,.25)",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="fire"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"
+                    />
+                  </svg>
+                </i>
+              </span>
+              <input
+                className="ant-input"
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Name"
+                style={null}
+                type="text"
+                value="Pizza"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <div
+              className="ant-radio-group ant-radio-group-solid"
+            >
+              <label
+                className="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+              >
+                <span
+                  className="ant-radio-button ant-radio-button-checked"
+                  style={Object {}}
+                >
+                  <input
+                    checked={true}
+                    className="ant-radio-button-input"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    type="radio"
+                    value={false}
+                  />
+                  <span
+                    className="ant-radio-button-inner"
+                  />
+                </span>
+                <span>
+                  Non-Vegeterian Food
+                </span>
+              </label>
+              <label
+                className="ant-radio-button-wrapper"
+              >
+                <span
+                  className="ant-radio-button"
+                  style={Object {}}
+                >
+                  <input
+                    checked={false}
+                    className="ant-radio-button-input"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    type="radio"
+                    value={true}
+                  />
+                  <span
+                    className="ant-radio-button-inner"
+                  />
+                </span>
+                <span>
+                  Vegeterian Food
+                </span>
+              </label>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <span>
+              For how many people: 
+            </span>
+            <div
+              className="ant-input-number"
+              style={Object {}}
+            >
+              <div
+                className="ant-input-number-handler-wrap"
+              >
+                <span
+                  aria-disabled={false}
+                  aria-label="Increase Value"
+                  className="ant-input-number-handler ant-input-number-handler-up "
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchCancel={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  role="button"
+                  unselectable="unselectable"
+                >
+                  <i
+                    aria-label="icon: up"
+                    className="anticon anticon-up ant-input-number-handler-up-inner"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="up"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"
+                      />
+                    </svg>
+                  </i>
+                </span>
+                <span
+                  aria-disabled={false}
+                  aria-label="Decrease Value"
+                  className="ant-input-number-handler ant-input-number-handler-down "
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchCancel={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  role="button"
+                  unselectable="unselectable"
+                >
+                  <i
+                    aria-label="icon: down"
+                    className="anticon anticon-down ant-input-number-handler-down-inner"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="down"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                      />
+                    </svg>
+                  </i>
+                </span>
+              </div>
+              <div
+                aria-valuemax={15}
+                aria-valuemin={1}
+                aria-valuenow={3}
+                className="ant-input-number-input-wrap"
+                role="spinbutton"
+              >
+                <input
+                  autoComplete="off"
+                  className="ant-input-number-input"
+                  max={15}
+                  min={1}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseUp={[Function]}
+                  required={false}
+                  step={1}
+                  value="3"
+                />
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <div
+              className="ant-divider ant-divider-horizontal ant-divider-with-text-left"
+              role="separator"
+            >
+              <span
+                className="ant-divider-inner-text"
+              >
+                Ingredients
+              </span>
+            </div>
+            <ul>
+              <li>
+                abc
+                <i
+                  aria-label="icon: delete"
+                  className="anticon anticon-delete"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "rgba(255,0,0)",
+                      "marginLeft": "7px",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="delete"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                    />
+                  </svg>
+                </i>
+                 
+              </li>
+              <li>
+                def
+                <i
+                  aria-label="icon: delete"
+                  className="anticon anticon-delete"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "rgba(255,0,0)",
+                      "marginLeft": "7px",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="delete"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                    />
+                  </svg>
+                </i>
+                 
+              </li>
+            </ul>
+            <span
+              className="ant-input-affix-wrapper"
+            >
+              <span
+                className="ant-input-prefix"
+              >
+                <i
+                  aria-label="icon: plus"
+                  className="anticon anticon-plus"
+                  style={
+                    Object {
+                      "color": "rgba(0,0,0,.25)",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="plus"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+                    />
+                    <path
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                    />
+                  </svg>
+                </i>
+              </span>
+              <input
+                className="ant-input"
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Add ingredient here"
+                style={null}
+                type="text"
+                value=""
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <textarea
+              className="ant-input"
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Add instructions here..."
+              rows={4}
+              style={Object {}}
+              value="abcdef"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          />
+        </div>
+      </div>
+    </div>
+  </form>,
+  <form
+    action="http://localhost:3001/photos"
+    method="POST"
+  >
+    <input
+      id="photo"
+      name="photo"
+      type="file"
+    />
+    <input
+      type="submit"
+      value="submit"
+    />
+  </form>,
+  <div
+    style={
+      Object {
+        "background": "#fff",
+        "borderRadius": "0 0 4px 4px",
+        "borderTop": "1px solid #e8e8e8",
+        "bottom": 0,
+        "left": 0,
+        "padding": "10px 16px",
+        "position": "absolute",
+        "textAlign": "right",
+        "width": "100%",
+      }
+    }
+  >
+    <button
+      className="ant-btn"
+      onClick={[Function]}
+      style={
+        Object {
+          "marginRight": 8,
+        }
+      }
+      type="button"
+    >
+      <span>
+        Cancel
+      </span>
+    </button>
+    <button
+      className="ant-btn ant-btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Submit
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Snapshot test 1`] = `
+Array [
+  <div
+    className="ant-spin"
+  >
+    <span
+      className="ant-spin-dot ant-spin-dot-spin"
+    >
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+    </span>
+  </div>,
+  <form
+    className="ant-form ant-form-horizontal login-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <span
+              className="ant-input-affix-wrapper"
+            >
+              <span
+                className="ant-input-prefix"
+              >
+                <i
+                  aria-label="icon: fire"
+                  className="anticon anticon-fire"
+                  style={
+                    Object {
+                      "color": "rgba(0,0,0,.25)",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="fire"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"
+                    />
+                  </svg>
+                </i>
+              </span>
+              <input
+                className="ant-input"
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Name"
+                style={null}
+                type="text"
+                value="Pizza"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <div
+              className="ant-radio-group ant-radio-group-solid"
+            >
+              <label
+                className="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+              >
+                <span
+                  className="ant-radio-button ant-radio-button-checked"
+                  style={Object {}}
+                >
+                  <input
+                    checked={true}
+                    className="ant-radio-button-input"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    type="radio"
+                    value={false}
+                  />
+                  <span
+                    className="ant-radio-button-inner"
+                  />
+                </span>
+                <span>
+                  Non-Vegeterian Food
+                </span>
+              </label>
+              <label
+                className="ant-radio-button-wrapper"
+              >
+                <span
+                  className="ant-radio-button"
+                  style={Object {}}
+                >
+                  <input
+                    checked={false}
+                    className="ant-radio-button-input"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    type="radio"
+                    value={true}
+                  />
+                  <span
+                    className="ant-radio-button-inner"
+                  />
+                </span>
+                <span>
+                  Vegeterian Food
+                </span>
+              </label>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <span>
+              For how many people: 
+            </span>
+            <div
+              className="ant-input-number"
+              style={Object {}}
+            >
+              <div
+                className="ant-input-number-handler-wrap"
+              >
+                <span
+                  aria-disabled={false}
+                  aria-label="Increase Value"
+                  className="ant-input-number-handler ant-input-number-handler-up "
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchCancel={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  role="button"
+                  unselectable="unselectable"
+                >
+                  <i
+                    aria-label="icon: up"
+                    className="anticon anticon-up ant-input-number-handler-up-inner"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="up"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"
+                      />
+                    </svg>
+                  </i>
+                </span>
+                <span
+                  aria-disabled={false}
+                  aria-label="Decrease Value"
+                  className="ant-input-number-handler ant-input-number-handler-down "
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchCancel={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  role="button"
+                  unselectable="unselectable"
+                >
+                  <i
+                    aria-label="icon: down"
+                    className="anticon anticon-down ant-input-number-handler-down-inner"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="down"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                      />
+                    </svg>
+                  </i>
+                </span>
+              </div>
+              <div
+                aria-valuemax={15}
+                aria-valuemin={1}
+                aria-valuenow={3}
+                className="ant-input-number-input-wrap"
+                role="spinbutton"
+              >
+                <input
+                  autoComplete="off"
+                  className="ant-input-number-input"
+                  max={15}
+                  min={1}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseUp={[Function]}
+                  required={false}
+                  step={1}
+                  value="3"
+                />
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <div
+              className="ant-divider ant-divider-horizontal ant-divider-with-text-left"
+              role="separator"
+            >
+              <span
+                className="ant-divider-inner-text"
+              >
+                Ingredients
+              </span>
+            </div>
+            <ul>
+              <li>
+                abc
+                <i
+                  aria-label="icon: delete"
+                  className="anticon anticon-delete"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "rgba(255,0,0)",
+                      "marginLeft": "7px",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="delete"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                    />
+                  </svg>
+                </i>
+                 
+              </li>
+              <li>
+                def
+                <i
+                  aria-label="icon: delete"
+                  className="anticon anticon-delete"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "rgba(255,0,0)",
+                      "marginLeft": "7px",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="delete"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                    />
+                  </svg>
+                </i>
+                 
+              </li>
+            </ul>
+            <span
+              className="ant-input-affix-wrapper"
+            >
+              <span
+                className="ant-input-prefix"
+              >
+                <i
+                  aria-label="icon: plus"
+                  className="anticon anticon-plus"
+                  style={
+                    Object {
+                      "color": "rgba(0,0,0,.25)",
+                    }
+                  }
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="plus"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+                    />
+                    <path
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                    />
+                  </svg>
+                </i>
+              </span>
+              <input
+                className="ant-input"
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Add ingredient here"
+                style={null}
+                type="text"
+                value=""
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          >
+            <textarea
+              className="ant-input"
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Add instructions here..."
+              rows={4}
+              style={Object {}}
+              value="abcdef"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+    >
+      <div
+        className="ant-col ant-form-item-control-wrapper"
+      >
+        <div
+          className="ant-form-item-control"
+        >
+          <span
+            className="ant-form-item-children"
+          />
+        </div>
+      </div>
+    </div>
+  </form>,
+  <form
+    action="http://localhost:3001/photos"
+    method="POST"
+  >
+    <input
+      id="photo"
+      name="photo"
+      type="file"
+    />
+    <input
+      type="submit"
+      value="submit"
+    />
+  </form>,
+  <div
+    style={
+      Object {
+        "background": "#fff",
+        "borderRadius": "0 0 4px 4px",
+        "borderTop": "1px solid #e8e8e8",
+        "bottom": 0,
+        "left": 0,
+        "padding": "10px 16px",
+        "position": "absolute",
+        "textAlign": "right",
+        "width": "100%",
+      }
+    }
+  >
+    <button
+      className="ant-btn"
+      onClick={[Function]}
+      style={
+        Object {
+          "marginRight": 8,
+        }
+      }
+      type="button"
+    >
+      <span>
+        Cancel
+      </span>
+    </button>
+    <button
+      className="ant-btn ant-btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Submit
+      </span>
+    </button>
+  </div>,
+]
+`;
