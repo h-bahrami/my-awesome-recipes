@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongodb = require('mongodb').MongoClient;
-const url = 'mongodb://localhost:27017/';
+const url = 'mongodb://mongo:27017/recipesDB';
 const uuidv1 = require('uuid/v1');
 uuidv1();
 
@@ -37,6 +37,7 @@ router.get('/', function (req, res, next) {
 router.post('/', function (req, res, next) {
   let recipe = req.body;
   recipe.id = uuidv1();
+  recipe.recordTime = new Date().toLocaleString();
   mongodb.connect(url, function (err, db) {
     var dbo = db.db("recipesDB");
     dbo.collection('recipes').insertOne(recipe);

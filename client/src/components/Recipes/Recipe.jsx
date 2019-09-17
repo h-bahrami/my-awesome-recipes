@@ -6,6 +6,8 @@ import { Formik } from 'formik';
 import PropTypes from 'prop-types';
 import TextArea from 'antd/lib/input/TextArea';
 import BottomContainer from '../common/BottomContainer';
+import {FilePond} from 'react-filepond'
+import 'filepond/dist/filepond.min.css';
 
 const yup = require('yup');
 
@@ -77,7 +79,7 @@ const Recipe = (props) => {
           <Icon type="delete" onClick={(e) => {
 
             let items = values['ingredients'].filter(x=>x !== item);
-            setFieldValue('in', items);
+            setFieldValue('ingredients', items);
 
           }} style={{ marginLeft: '7px', color: 'rgba(255,0,0)' }} /> </li>)}
         </ul>
@@ -102,20 +104,23 @@ const Recipe = (props) => {
         <TextArea placeholder='Add instructions here...' value={values['instructions']} onChange={(e) => setFieldValue('instructions', e.target.value)} rows={4} />
         </Form.Item>
 
-        <Form.Item>           
-        {/* <Upload {...uploadProps} key="photo">
-          <Button>
-            <Icon type="upload" /> Upload a photo of the dish
-          </Button>
-        </Upload> */}
-        
+        <Form.Item> 
+          {values['image'] && values['image'].length !== 0 ? 
+            <img style={{maxHeight: '300px', maxWidth: '300px'}} 
+            src={`http://localhost:3001/photos/${values['image']}`} alt='Food'/> : null }          
+        <FilePond
+              // Set the callback here.
+              onprocessfile={(error, file) => {
+                console.log(file.serverId);
+                setFieldValue('image', file.serverId)
+              }}
+              name="photo"
+              server="http://localhost:3001/photos"
+          />
         </Form.Item>
 
           </Form>
-          <form method='POST' action='http://localhost:3001/photos'>
-        <input type='file' name='photo' id='photo' />
-        <input type='submit' value='submit' />
-        </form>
+          
         <BottomContainer>
         <Button style={{ marginRight: 8 }} onClick={onCancel}>Cancel</Button>
         <Button onClick={handleSubmit} type="primary">

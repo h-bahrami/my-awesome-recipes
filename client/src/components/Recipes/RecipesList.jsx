@@ -1,7 +1,7 @@
 /* eslint-disable no-script-url */
 import React from 'react';
 import {
-  Tag, Divider, Table, Spin, Drawer, Button, Icon, Popconfirm,
+  Tag, Divider, Table, Spin, Drawer, Button, Icon, Popconfirm, Avatar,
 } from 'antd';
 import PropTypes from 'prop-types';
 import Recipe from './Recipe';
@@ -19,6 +19,13 @@ export default class RecipesList extends React.Component {
     const { selectRecipe, deleteRecipe } = this.props;
     const columns = [
       {
+        title: '',
+        dataIndex: 'image',
+        key: 'image',
+        render:  (text, record) => <Avatar src={`http://localhost:3001/photos/${text}`} size="default" />
+      },
+
+      {
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
@@ -28,6 +35,11 @@ export default class RecipesList extends React.Component {
         dataIndex: 'vegetarian',
         key: 'vegetarian',
         render: (text, record) => ( record.vegetarian ? 'Yes': 'No')
+      },  
+      {
+        title: 'Added at',
+        dataIndex: 'recordTime',
+        key: 'recordTime',
       },    
       {
         title: '',

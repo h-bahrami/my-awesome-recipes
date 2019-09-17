@@ -2,3 +2,15 @@ node_modules
 npm-debug.log
 client/src/compiled/
 server/.env
+data/WiredTiger.wt
+data/mongod.lock
+data/WiredTiger
+data/WiredTiger.lock
+data/WiredTiger.wt.1
+data/WiredTiger.wt.2
+data/WiredTiger.wt.3
+data/WiredTiger.wt.4
+data/WiredTiger.wt.5
+data/WiredTiger.wt.6
+data/WiredTiger.wt.7
+data/WiredTiger.wt.8

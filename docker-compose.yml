@@ -1,29 +1,30 @@
 version: "3"
 services:
-  
   backend:
-    container_name: recipes_backend
-    restart: always
+    container_name: recipes_api
     build:
-      context: .
-      dockerfile: server/Dockerfile
+      context: ./server
+      dockerfile: Dockerfile
     ports:
       - "3001:3001"
     links:
       - mongo
+    restart: on-failure
 
   frontend:
-    container_name: recipes_frontend
+    container_name: recipes_client
     build:
-      context: .
-      dockerfile: client/Dockerfile
+      context: ./client
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    links:
+      - backend
 
   mongo:
     container_name: mongo
     image: mongo
-    volumes:
-      - ./data:/data/db
     ports:
       - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: recipesDB

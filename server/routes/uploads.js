@@ -18,13 +18,12 @@ router.post('/', upload.single('photo'), async function (req, res) {
     if (path.extname(req.file.originalname).toLowerCase() === ".png") {
         fs.rename(tempPath, targetPath, err => {
             if (err) return handleError(err, res);
-
-            res.status(200).json({ name });
+            // res.status(200).json({ name });
+            res.send(name)
         });
     } else {
         fs.unlink(tempPath, err => {
             if (err) return handleError(err, res);
-
             res.status(403).json({ error: "Only .png files are allowed!" });
         });
     }
