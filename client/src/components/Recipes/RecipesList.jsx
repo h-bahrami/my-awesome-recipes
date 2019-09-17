@@ -29,17 +29,23 @@ export default class RecipesList extends React.Component {
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
+        sorter: (a, b) => ('' + a.name).localeCompare(b.name),
+        sortDirections: ['descend', 'ascend']
       },
       {
         title: 'Vegetarian Food',
         dataIndex: 'vegetarian',
         key: 'vegetarian',
-        render: (text, record) => ( record.vegetarian ? 'Yes': 'No')
+        render: (text, record) => ( record.vegetarian ? 'Yes': 'No'),
+        sorter: (a, b) => a.vegetarian == b.vegetarian,
+        sortDirections: ['descend', 'ascend']
       },  
       {
         title: 'Added at',
         dataIndex: 'recordTime',
         key: 'recordTime',
+        sorter: (a, b) => a.recordTime > b.recordTime,
+        sortDirections: ['descend', 'ascend']
       },    
       {
         title: '',
