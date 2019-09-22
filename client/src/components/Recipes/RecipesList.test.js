@@ -1,6 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import RecipesList from './RecipesList';
 import renderer from 'react-test-renderer';
 
@@ -26,49 +25,81 @@ const recipes = [{
     instructions: "abcdefghijk"
 }]
 
-describe('Testing Recipes Component', () => {
-
-    const selectRecipe = jest.fn();
-    const updateRecipe = jest.fn();
-    const deleteRecipe = jest.fn();
-    const fetchRecipes = jest.fn();
-    const newRecipe = jest.fn();
-
-    const props = {
-        items: recipes,
-        loading: false,
-        selectedRecipe: null,
-        error: '',
-        selectRecipe,
-        updateRecipe,
-        deleteRecipe,
-        fetchRecipes,
-        newRecipe
-    };
-
+describe('Testing RecipesList Component', () => {
 
     it('renders without crashing', () => {
+
+        const selectRecipe = jest.fn();
+        const updateRecipe = jest.fn();
+        const deleteRecipe = jest.fn();
+        const fetchRecipes = jest.fn();
+        const newRecipe = jest.fn();
+
+        const props = {
+            items: recipes,
+            loading: false,
+            selectedRecipe: null,
+            error: '',
+            selectRecipe,
+            updateRecipe,
+            deleteRecipe,
+            fetchRecipes,
+            newRecipe
+        };
+
         shallow(<RecipesList {...props} />);
     });
 
     it('snapshot test', () => {
+
+        const selectRecipe = jest.fn();
+        const updateRecipe = jest.fn();
+        const deleteRecipe = jest.fn();
+        const fetchRecipes = jest.fn();
+        const newRecipe = jest.fn();
+
+        const props = {
+            items: recipes,
+            loading: false,
+            selectedRecipe: null,
+            error: '',
+            selectRecipe,
+            updateRecipe,
+            deleteRecipe,
+            fetchRecipes,
+            newRecipe
+        };
+
         const tree = renderer
             .create(<RecipesList {...props} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     });
 
-    // it('test click event', () => {
-    //     const mockCallBack = jest.fn();
+    it('test click event', () => {
 
-    //     const wrapper = mount((<Recipe recipe={recipe} update={mockCallBack} />));
-    //     //wrapper.debug();
-    //     //console.log(wrapper);
-    //     wrapper.find('input').forEach(input => input.simulate('change', { target: { value: '123451' } }));
-    //     wrapper.find('textarea').simulate('change', { target: { value: '012345678911' } });
-    //     const buttons = wrapper.find('button').last().simulate('click');
-    //     expect(mockCallBack).toHaveBeenCalled();
-    // });
+
+        const selectRecipe = jest.fn();
+        const updateRecipe = jest.fn();
+        const deleteRecipe = jest.fn();
+        const fetchRecipes = jest.fn();
+        const newRecipe = jest.fn();
+
+        const props = {
+            items: recipes,
+            loading: false,
+            selectedRecipe: null,
+            error: '',
+            selectRecipe,
+            updateRecipe,
+            deleteRecipe,
+            fetchRecipes,
+            newRecipe
+        };
+
+        shallow((<RecipesList {...props} />));
+        expect(fetchRecipes).toHaveBeenCalled();
+    });
 });
 
 

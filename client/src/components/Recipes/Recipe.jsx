@@ -11,16 +11,7 @@ import 'filepond/dist/filepond.min.css';
 
 const yup = require('yup');
 
-const uploadProps = {
-  action: 'http://localhost:3001/photos',
-  listType: 'picture',
-  defaultFileList: [],
-  className: 'upload-list-inline',
-  multipart: true
-};
-
 const Recipe = (props) => {
-  console.log(props);
   const { loading, recipe, onCancel, onChange } = props;  
   return (
     <>
@@ -40,95 +31,95 @@ const Recipe = (props) => {
 
         render={({values, errors, setFieldValue, handleSubmit }) => (
           <>
-          <Form onSubmit={handleSubmit} className="login-form">
+          <Form className="login-form">
 
-    <Form.Item
-        hasFeedback={!!errors['name']}
-        validateStatus={errors['name'] && 'error'}
-        help={errors['name']}
-      >
-          <Input placeholder="Name" value={values['name']} onChange={(e) => setFieldValue('name', e.target.value)} 
-            prefix={<Icon type="fire" style={{ color: 'rgba(0,0,0,.25)' }} />}/>
+            <Form.Item
+                hasFeedback={!!errors['name']}
+                validateStatus={errors['name'] && 'error'}
+                help={errors['name']}
+              >
+                  <Input placeholder="Name" value={values['name']} onChange={(e) => setFieldValue('name', e.target.value)} 
+                    prefix={<Icon type="fire" style={{ color: 'rgba(0,0,0,.25)' }} />}/>
 
-    </Form.Item>
-    <Form.Item>
-      <Radio.Group defaultValue={values['vegeterian']} buttonStyle="solid">
-          <Radio.Button value={false}>Non-Vegeterian Food</Radio.Button>
-          <Radio.Button value={true}>Vegeterian Food</Radio.Button>
-        </Radio.Group>
-      </Form.Item>
+            </Form.Item>
+            <Form.Item>
+              <Radio.Group defaultValue={values['vegeterian']} buttonStyle="solid">
+                  <Radio.Button value={false}>Non-Vegeterian Food</Radio.Button>
+                  <Radio.Button value={true}>Vegeterian Food</Radio.Button>
+                </Radio.Group>
+              </Form.Item>
 
-      <Form.Item 
-        hasFeedback={!!errors['people']}
-        validateStatus={errors['people'] && 'error'}
-        help={errors['people']}
-      >
-         <span>For how many people: </span><InputNumber prefix={<Icon type="number" style={{ color: 'rgba(0,0,0,.25)' }} />} 
-         value={values['people']} min={1} max={15} defaultValue={3} onChange={(e) => setFieldValue('people', e)} />
-      </Form.Item>
+              <Form.Item 
+                hasFeedback={!!errors['people']}
+                validateStatus={errors['people'] && 'error'}
+                help={errors['people']}
+              >
+                <span>For how many people: </span><InputNumber prefix={<Icon type="number" style={{ color: 'rgba(0,0,0,.25)' }} />} 
+                value={values['people']} min={1} max={15} defaultValue={3} onChange={(e) => setFieldValue('people', e)} />
+              </Form.Item>
 
-      <Form.Item
-        hasFeedback={!!errors['ingredients']}
-        validateStatus={errors['ingredients'] && 'error'}
-        help={errors['ingredients']}
-      >
+              <Form.Item
+                hasFeedback={!!errors['ingredients']}
+                validateStatus={errors['ingredients'] && 'error'}
+                help={errors['ingredients']}
+              >
 
-        <Divider orientation="left">Ingredients</Divider>
-        <ul>
-          { values['ingredients'].map(item => <li>{item} 
-          <Icon type="delete" onClick={(e) => {
+                <Divider orientation="left">Ingredients</Divider>
+                <ul>
+                  { values['ingredients'].map((item, index) => <li key={index}>{item} 
+                  <Icon type="delete" onClick={(e) => {
 
-            let items = values['ingredients'].filter(x=>x !== item);
-            setFieldValue('ingredients', items);
+                    let items = values['ingredients'].filter(x=>x !== item);
+                    setFieldValue('ingredients', items);
 
-          }} style={{ marginLeft: '7px', color: 'rgba(255,0,0)' }} /> </li>)}
-        </ul>
-        <Input value={values['tmp']} placeholder="Add ingredient here" onChange={(e) => setFieldValue('tmp', e.target.value)}
-        onKeyDown={e => {
-          if(e.keyCode === 13) {
-            let items = values['ingredients'].concat(values['tmp']);            
-            setFieldValue('ingredients', items);
-            setFieldValue('tmp', '');
-          }
-        }}
+                  }} style={{ marginLeft: '7px', color: 'rgba(255,0,0)' }} /> </li>)}
+                </ul>
+                <Input value={values['tmp']} placeholder="Add ingredient here" onChange={(e) => setFieldValue('tmp', e.target.value)}
+                onKeyDown={e => {
+                  if(e.keyCode === 13) {
+                    let items = values['ingredients'].concat(values['tmp']);            
+                    setFieldValue('ingredients', items);
+                    setFieldValue('tmp', '');
+                  }
+                }}
 
-            prefix={<Icon type="plus" style={{ color: 'rgba(0,0,0,.25)' }} />}/>
+                    prefix={<Icon type="plus" style={{ color: 'rgba(0,0,0,.25)' }} />}/>
 
-      </Form.Item>
+              </Form.Item>
 
-      <Form.Item
-        hasFeedback={!!errors['instructions']}
-        validateStatus={errors['instructions'] && 'error'}
-        help={errors['instructions']}
-      >
-        <TextArea placeholder='Add instructions here...' value={values['instructions']} onChange={(e) => setFieldValue('instructions', e.target.value)} rows={4} />
-        </Form.Item>
+              <Form.Item
+                hasFeedback={!!errors['instructions']}
+                validateStatus={errors['instructions'] && 'error'}
+                help={errors['instructions']}
+              >
+                <TextArea placeholder='Add instructions here...' value={values['instructions']} onChange={(e) => setFieldValue('instructions', e.target.value)} rows={4} />
+                </Form.Item>
 
-        <Form.Item> 
-          {values['image'] && values['image'].length !== 0 ? 
-            <img style={{maxHeight: '300px', maxWidth: '300px'}} 
-            src={`http://localhost:3001/photos/${values['image']}`} alt='Food'/> : null }          
-        <FilePond
-              // Set the callback here.
-              onprocessfile={(error, file) => {
-                console.log(file.serverId);
-                setFieldValue('image', file.serverId)
-              }}
-              name="photo"
-              server="http://localhost:3001/photos"
-          />
-        </Form.Item>
+                <Form.Item> 
+                  {values['image'] && values['image'].length !== 0 ? 
+                    <img style={{maxHeight: '300px', maxWidth: '300px'}} 
+                    src={`http://localhost:3001/photos/${values['image']}`} alt='Food'/> : null }          
+                <FilePond
+                      // Set the callback here.
+                      onprocessfile={(error, file) => {
+                        console.log(file.serverId);
+                        setFieldValue('image', file.serverId)
+                      }}
+                      name="photo"
+                      server="http://localhost:3001/photos"
+                  />
+                </Form.Item>
 
-          </Form>
-          
-        <BottomContainer>
-        <Button style={{ marginRight: 8 }} onClick={onCancel}>Cancel</Button>
-        <Button onClick={handleSubmit} type="primary">
-          Submit
-        </Button>
-        </BottomContainer>
-        </>
-        )}
+                  </Form>
+                  
+                <BottomContainer>
+                  <Button style={{ marginRight: 8 }} onClick={onCancel}>Cancel</Button>
+                  <Button onClick={handleSubmit} type="primary">
+                    Submit
+                  </Button>
+                </BottomContainer>
+                </>
+                )}
       />
     </>
   );
@@ -149,7 +140,7 @@ Recipe.propTypes = {
   loading: PropTypes.bool,
   recipe: RecipeType,
   onCancel: PropTypes.func,
-  update: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 Recipe.defaultProps = {

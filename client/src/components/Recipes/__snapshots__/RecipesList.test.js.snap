@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Recipes Component snapshot test 1`] = `
+exports[`Testing RecipesList Component snapshot test 1`] = `
 Array [
   <div
     className="ant-table-wrapper"
