@@ -1,8 +1,6 @@
-
-
-import React from 'react';
-import { Form, Input } from 'antd';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Form, Input } from "antd";
+import PropTypes from "prop-types";
 
 const TextInput = ({
   values,
@@ -16,13 +14,13 @@ const TextInput = ({
 }) => (
   <Form.Item
     hasFeedback={!!errors[name]}
-    validateStatus={errors[name] && 'error'}
+    validateStatus={errors[name] && "error"}
     help={errors[name]}
   >
     <Input
       placeholder={placeholder}
       value={values[name]}
-      onChange={(event) => setFieldValue(name, event.target.value)}
+      onChange={event => setFieldValue(name, event.target.value)}
       onBlur={() => setFieldTouched(name)}
       onPressEnter={handleSubmit}
       prefix={prefix}

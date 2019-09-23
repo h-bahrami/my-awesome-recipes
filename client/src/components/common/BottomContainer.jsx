@@ -1,24 +1,23 @@
+import React from "react";
+import PropTypes from "prop-types";
 
-import React from 'react';
-import PropTypes from 'prop-types';
-
-const BottomContainer = (props) => {
+const BottomContainer = props => {
   const { children } = props;
   return (
     <div
       style={{
-        position: 'absolute',
+        position: "absolute",
         bottom: 0,
-        width: '100%',
-        borderTop: '1px solid #e8e8e8',
-        padding: '10px 16px',
-        textAlign: 'right',
+        width: "100%",
+        borderTop: "1px solid #e8e8e8",
+        padding: "10px 16px",
+        textAlign: "right",
         left: 0,
-        background: '#fff',
-        borderRadius: '0 0 4px 4px',
+        background: "#fff",
+        borderRadius: "0 0 4px 4px"
       }}
     >
-      { children }
+      {children}
     </div>
   );
 };
